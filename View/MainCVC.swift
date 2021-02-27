@@ -5,7 +5,7 @@ class MainCVC: UICollectionViewController {
     let itemsPerRow: CGFloat = 3
     let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
-    let player = ["player1", "player2", "player3", "player4", "player5",
+    let player = ["player1", "player2", "player4", "player5",
                   "player6", "player7", "player8", "player9", "player10",
                   "player11", "player12", "player13", "player14", "player15",
                   "player16", "player17", "player18", "player19", "player20",
@@ -40,6 +40,19 @@ class MainCVC: UICollectionViewController {
         let image = UIImage(named: imageName)
         cell.imagePlayer.image = image
     
+        //Дизайн ячейки
+        cell.contentView.layer.cornerRadius = 9
+        cell.contentView.layer.borderWidth = 1
+        cell.contentView.layer.borderColor = UIColor.clear.cgColor
+        cell.contentView.layer.masksToBounds = true
+
+        cell.layer.shadowColor = UIColor.black.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 2)
+        cell.layer.shadowRadius = 4
+        cell.layer.shadowOpacity = 0.4
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+        
         return cell
     }
 /*
