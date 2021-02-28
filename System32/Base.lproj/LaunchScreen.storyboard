@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playerLaunch" translatesAutoresizingMaskIntoConstraints="NO" id="kTo-6M-lfA">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kTo-6M-lfA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -26,7 +26,7 @@
                             <constraint firstAttribute="bottom" secondItem="kTo-6M-lfA" secondAttribute="bottom" id="0K9-Ik-Dgj"/>
                             <constraint firstItem="kTo-6M-lfA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0dd-qh-NyO"/>
                             <constraint firstItem="kTo-6M-lfA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ROt-If-uE9"/>
-                            <constraint firstItem="kTo-6M-lfA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gNP-yL-M7v"/>
+                            <constraint firstItem="kTo-6M-lfA" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="gNP-yL-M7v"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,7 +36,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="playerLaunch" width="500" height="333"/>
+        <image name="background" width="1170" height="2532"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
